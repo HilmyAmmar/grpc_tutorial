@@ -1,20 +1,20 @@
-syntax = "proto3"
+syntax = "proto3";
 
 package services;
 
 // Service for precessing payments
 service PaymentService {
-    rpc ProcessPayment(PaymentRequest) returns (PaymentResponse)
+    rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
 }
 
 // Service for checking transaction history
 service TransactionService {
-    rpc GetTransactionHistory(TransactionRequest) returns (stream TransactionResponse)
+    rpc GetTransactionHistory(TransactionRequest) returns (stream TransactionResponse);
 }
 
 // Service for chatting with a customer service bot
 service ChatService {
-    rpc Chat(stream ChatMessage) returns (stream ChatMessage)
+    rpc Chat(stream ChatMessage) returns (stream ChatMessage);
 }
 
 message PaymentRequest {
@@ -22,7 +22,7 @@ message PaymentRequest {
     double amount = 2;
 }
 
-messae PaymentResponse {
+message PaymentResponse {
     bool success = 1;
 }
 
@@ -30,7 +30,7 @@ message TransactionRequest {
     string user_id = 1;
 }
 
-messae TransactionResponse {
+message TransactionResponse {
     string transaction_id = 1;
     string status = 2;
     double amount = 3;
