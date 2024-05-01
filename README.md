@@ -35,3 +35,11 @@ Kerugian: Menambahkan kompleksitas kode, Membutuhkan penanganan error yang baik,
 - Memastikan sistem dapat memberikan respon yang baik ketika terjadi error tertentu
 - Memanfaatkan *logging* dan *monitoring* untuk mencatat aktivitas dan performa sistem pembayaran
 
+### What impact does the adoption of gRPC as a communication protocol have on the overall architecture and design of distributed systems, particularly in terms of interoperability with other technologies and platforms?
+- Memungkinkan pembuatan service dan client di berbagai bahasa pemrograman yang mendukung gRPC
+- Meningkatkan interoperabilitas yang lebih baik antara service yang dibangun dengan bahasa pemrograman yang berbeda jika menggunakan gRPC sebagai protokol komunikasi standar
+- Meminimalkan overhead transfer data dan meningkatkan performa keseluruhan sistem
+- Berjalan di berbagai platform dan sistem operasi
+
+### What are the advantages and disadvantages of using HTTP/2, the underlying protocol for gRPC, compared to HTTP/1.1 or HTTP/1.1 with WebSocket for REST APIs?
+
