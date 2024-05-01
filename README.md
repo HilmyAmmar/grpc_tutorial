@@ -72,4 +72,3 @@ gRPC:
 - Kesesuaian real-time: Ideal
 - Latens: Lebih rendah
 - Aliran data: Berkelanjutan
-
