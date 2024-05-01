@@ -42,4 +42,20 @@ Kerugian: Menambahkan kompleksitas kode, Membutuhkan penanganan error yang baik,
 - Berjalan di berbagai platform dan sistem operasi
 
 ### What are the advantages and disadvantages of using HTTP/2, the underlying protocol for gRPC, compared to HTTP/1.1 or HTTP/1.1 with WebSocket for REST APIs?
+Keuntungan HTTP/2:
+- Memungkinkan pengiriman dan penerimaan beberapa permintaan/respon secara bersamaan melalui satu koneksi TCP
+- Mengurangi kode boilerplate
+- Menggunakan protobuf untuk representasi data yang ringkas, mengurangi overhead dibandingkan format berbais teks seperti JSON
 
+Kekurangan HTTP/2:
+- Memiliki kompleksitas yang lebih tinggi dibanding HTTP/1.1 pada REST API.
+- Tidak didukung oleh semua server dan klien
+
+Keuntungan HTTP/1.1:
+- Didukung oleh semua server dan klien, kompabilitas lebih luas
+- Kompleksitas lebih rendah dibanding HTTP/2, memudahkan penerapan dan penggunaan
+- Memungkinkan berbagai metode permintaan (GET,POST,PUT,DELETE) untuk operasi yang berbeda
+
+Kekurangan HTTP/1.1:
+- Traffic jaringan yang tinggi karena banyak header yang dibutuhkan pada setiap permintaan
+- Satu permintaan yang lambat dapat memblokir permintaan selanjutnya pada koneksi yang sama
