@@ -20,3 +20,14 @@ antara klien dan server, Cocok digunakan dalam aplikasi abrolan dan fitur kolabo
 - Ada kemungkinan pesan yang dikirimkan hilang atau tidak terkirim. Hal ini bisa diatasi dengan menyediakan fitur yang dapat melakukan pengiriman ulang pesan tanpa perlu menulis pesan itu kembali
 - Manajemen state akan semakin rumit ketika banyak pengguna yang terhubung. Kode perlu untuk didesain dengan baik untuk menghindari kebocoran memori terkait state
 
+### What are the advantages and disadvantages of using the tokio_stream::wrappers::ReceiverStream for streaming responses in Rust gRPC services?
+Keuntungan: Memungkinkan streaming asynchronous yang akan meningkatkan responsivitas, mencegah klien kewalahan dengan data, streaming dapat dilakukan dengan berbagai tipe data
+Kerugian: Menambahkan kompleksitas kode, Membutuhkan penanganan error yang baik, Terdapat potensi terjadinya kebocoran memori jika tidak dikelola dengan baik
+
+### In what ways could the Rust gRPC code be structured to facilitate code reuse and modularity, promoting maintainability and extensibility over time?
+- Menggunakan protobuf melalui file .proto untuk standarisasi pesan dan method antar service
+- Pisahkan kode menjadi modul-modul kecil berdasarkan fungsionalitas tertentu
+- Memiliki logging untuk melacak aktivitas service dan melakukan monitoring performa
+- Buat unit test dan integration test untuk memastikan kualitas kode
+
+### In the MyPaymentService implementation, what additional steps might be necessary to handle more complex payment processing logic?
