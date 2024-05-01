@@ -31,3 +31,7 @@ Kerugian: Menambahkan kompleksitas kode, Membutuhkan penanganan error yang baik,
 - Buat unit test dan integration test untuk memastikan kualitas kode
 
 ### In the MyPaymentService implementation, what additional steps might be necessary to handle more complex payment processing logic?
+- Memastikan data yang diterima valid sebelum dproses
+- Memastikan sistem dapat memberikan respon yang baik ketika terjadi error tertentu
+- Memanfaatkan *logging* dan *monitoring* untuk mencatat aktivitas dan performa sistem pembayaran
+
