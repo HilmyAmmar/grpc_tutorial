@@ -59,3 +59,17 @@ Keuntungan HTTP/1.1:
 Kekurangan HTTP/1.1:
 - Traffic jaringan yang tinggi karena banyak header yang dibutuhkan pada setiap permintaan
 - Satu permintaan yang lambat dapat memblokir permintaan selanjutnya pada koneksi yang sama
+
+## How does the request-response model of REST APIs contrast with the bidirectional streaming capabilities of gRPC in terms of real-time communication and responsiveness?
+REST API:
+- Model Komunikasi: Satu arah
+- Kesesuaian real-time: Terbatas
+- Latensi: Lebih tinggi
+- Aliran data: Permintaan diskrit
+
+gRPC:
+- Model komunikas: Dua arah
+- Kesesuaian real-time: Ideal
+- Latens: Lebih rendah
+- Aliran data: Berkelanjutan
+
